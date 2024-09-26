@@ -10,12 +10,14 @@ import CardContent from '@material-ui/core/CardContent';
 import Header from './common/header';
 import Form from './common/registrationForm';
 import Login from './common/loginForm';
+
 function App() {
-  return (
-    <div className="App">
-            {/* <Form/> */}
-             <Login/>
-      </div>
+  return ( <
+    div className = "App" > {
+      /* <Form/> */ } <
+    Login / >
+    <
+    /div>
   );
 }
 export default App;

@@ -4,10 +4,7 @@ import '../styles/custom.css';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
-import { grey } from '@material-ui/core/colors';
-import { yellow } from '@material-ui/core/colors';
-import { blue } from '@material-ui/core/colors';
-import { green } from '@material-ui/core/colors';
+import { grey, yellow, blue, green } from '@material-ui/core/colors';
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
@@ -16,6 +13,7 @@ import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import '../fonts/Poppins/stylesheet.css';
+import { Link } from 'react-router-dom';
 
 // Whole Page CSS
 const useStyles = makeStyles((theme) => ({
@@ -266,15 +264,29 @@ const useStyles = makeStyles((theme) => ({
       right: "17%",
       opacity: "0.9"
     },
+    buttonWrapper:{
+      marginTop:20,
+      display:"flex",
+      justifyContent:"space-evenly",
+      "& a":{
+          textTransform:"Capitalize",
+          textDecoration:"none",
+          color: grey[900],
+          backgroundColor: "#22d3ee",
+          padding:"8px 20px",
+          borderRadius:25,
+          fontWeight:600
+      }
+  }
 }));
 
 export default function RecipeReviewCard() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
 
   return (
     <div class="contentWrapper">
@@ -538,6 +550,10 @@ export default function RecipeReviewCard() {
         </Card>
       </Grid>
     </Grid>
+    <div className={classes.buttonWrapper}>
+        <Link to="/table">Go to Table</Link>
+        <Link to="/">Go to Home</Link>
+    </div>
     </div>
   );
 }

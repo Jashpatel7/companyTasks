@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 import { lighten, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -17,6 +17,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
+import { grey } from "@material-ui/core/colors";
 // import Switch from '@material-ui/core/Switch';
 import '../styles/custom.css';
 
@@ -220,7 +221,21 @@ const useStyles = makeStyles((theme) => ({
     },
     iconButton: {
       padding:"7px",
-    }
+    },
+    buttonWrapper:{
+      margin:"20px 0",
+      display:"flex",
+      justifyContent:"space-evenly",
+      "& a":{
+          textTransform:"Capitalize",
+          textDecoration:"none",
+          color: grey[900],
+          backgroundColor: "#22d3ee",
+          padding:"8px 20px",
+          borderRadius:25,
+          fontWeight:600
+      }
+  }
 }));
 
 export default function EnhancedTable() {
@@ -378,7 +393,10 @@ export default function EnhancedTable() {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </Paper>
-    
+      <div className={classes.buttonWrapper}>
+        <Link to="/card">Go to Cards</Link>
+        <Link to="/">Go to Home</Link>
+      </div>
     </div>
   );
 }

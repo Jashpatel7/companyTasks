@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import {
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
 // My Components
 import Header from './common/header';
 import Form from './common/registrationForm';
@@ -19,14 +23,16 @@ import Login from './common/loginForm';
 //         );
 //   }
 //   };
-ReactDOM.render(
-  <React.StrictMode>
-      {/* <Header /> */}
+ReactDOM.render( <
+  React.StrictMode > {
+    /* <Header /> */ }
 
-    {/* <Form/>  */}
-      <App />
-  </React.StrictMode>,
-   document.getElementById('root')
+  {
+    /* <Form/>  */ } <
+  App / >
+  <
+  /React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

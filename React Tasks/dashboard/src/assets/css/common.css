@@ -1,0 +1,54 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Font Sizes */
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+/* font weight */
+.fw-400{
+    font-weight: 400;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-900{
+    font-weight: 900;
+}
+/* Spacing */
+.py-20 {
+    padding: 20px 0;
+}
+.py-25 {
+    padding: 25px 0;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-25 {
+    padding-bottom: 25px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+/* border-radius */
+.border-round-5 {
+    border-radius: 5px;
+}
+.border-round-20 {
+    border-radius: 20px;
+}
+
+/* Width class */

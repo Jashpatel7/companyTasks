@@ -1,0 +1,71 @@
+.midbarContainer {
+    flex: 0 0 360px;
+    height:calc(100vh - 40px);
+}
+.midbar {
+    height: 100%;
+}
+.search-input{
+    background: transparent;
+    padding-left: 50px;
+}
+.search-input::before {
+    position: absolute;
+    content: '';
+    background: url('../../images/svg/search-white.svg');
+    width: 100%;
+}
+.search-input:focus {
+    color:#fff;
+    outline: none;
+    background-color: transparent;
+}
+.cardsContainer {
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100% - 100px);
+}
+.searchIconWrapper {
+    top: 6px;
+    left: 10px;
+}
+.midbarItem {
+    border-radius: 3px;
+    background-color: rgba(54,60,89,.6);
+    overflow: hidden;
+    margin: 0 16px 15px 0;
+    cursor: pointer;
+}
+.imgWrapper {
+    border-radius: 3px 0 0 3px;
+    overflow: hidden;
+    width: 127px;
+    -webkit-flex: 0 0 127px;
+    flex: 0 0 127px;
+    display: -webkit-flex;
+    display: flex;
+}
+.imgWrapper img{
+    width:100%;
+}
+.contentWrapper {
+    padding: 13px 17px 5px;
+    flex: 0 0 calc(100% - 127px);
+    max-width: calc(100% - 127px);
+    position: relative;
+    border-radius: 0 3px 3px 0;
+    border: 2px solid transparent;
+    border-left: none;
+    display: block;
+}
+.iconsWrapper .userType{
+    padding-right:15px;
+    border-right:1px solid rgba(255,255,255,0.7);
+}
+.iconsWrapper .deviceType{
+    padding-left:15px;
+    flex-grow: 1;
+}
+.iconsWrapper .deviceType svg{
+    margin-right: 10px;
+}

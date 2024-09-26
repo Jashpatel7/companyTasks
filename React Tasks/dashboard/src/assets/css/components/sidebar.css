@@ -1,0 +1,75 @@
+.sidebarWrapper {
+    flex: 0 0 137px;
+    height:calc(100vh - 40px);
+    background-color: #182040;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.sidebar {
+    height: 100%;
+}
+.logoWrapper {
+    border-bottom: 2px solid rgba(72, 99, 240, 0.3);
+}
+.item:last-child {
+    margin-bottom: 0;
+}
+.item{
+    width: 80px;
+}
+.item .itemName{
+    margin: 0;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+.item .iconWrap {
+    width: 28px;
+    height: 26px;
+}
+.item .iconWrap .sidebarIcon svg {
+    width:100%;
+    fill:#fff;
+}
+.item:hover::before {
+    color:#f57e3a;
+    position: absolute;
+    content: " ";
+    border-left: 3px solid #f57e3a;
+    height: 100%;
+    left: -26px;
+}
+.item:hover .iconWrap .sidebarIcon svg {
+    fill:#f57e3a;
+}
+.item:hover .itemName{
+    color: #f57e3a;
+}
+.item:hover::before{
+    color: #f57e3a;
+}
+.itemActive {
+    width: 80px;
+}
+.itemActive .itemName{
+    margin: 0;
+    padding-top: 10px;
+    color: #f57e3a;
+}
+.itemActive svg {
+    width:100%;
+    fill:#f57e3a;
+}
+.itemActive::before {
+    position: absolute;
+    content: " ";
+    border-left: 3px solid #f57e3a;
+    height: 100%;
+    left: -26px;
+}
+.lowerdeck .profileWrapper {
+    width:70px;
+    height:70px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #e7e8f9;
+}

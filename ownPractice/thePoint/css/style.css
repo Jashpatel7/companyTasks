@@ -1,0 +1,140 @@
+html,body{
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    background-color: salmon;
+    display: flex;
+    /* padding:20px; */
+    /* height: 100vh; */
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+.child{
+    width: 100px;
+    border-radius: 10px;
+    padding: 50px;
+    margin:10px;
+}
+.first{
+    background-color: rgb(221, 150, 162);
+}
+.second{
+    background-color: rgb(236, 236, 167);
+}
+.third{
+    background-color: rgb(112, 13, 13);
+}
+.cardContainer {
+    display: flex;
+}
+.customCard {
+    /* width: 70%; */
+    border: 2px solid rgba(0, 0, 0, .2);
+    display: inline-block;
+    box-shadow: 4px 3px 16px 3px rgb(0 25 0 / 5%),
+        2px 2px 29px 11px rgb(128 128 128 / 15%),
+        1px 1px 10px 5px #fccdfc;
+    border-radius: 7px;
+    background-color: white;
+    position: relative;
+    margin: auto;
+}
+.cardHeader {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 1px solid aquamarine;
+    background-color:aquamarine
+}
+.cardBody {
+    text-align: justify;
+    padding:15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: cornflowerblue;
+}
+/* Designs Cards 1 */
+.designCardContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.customCard2{
+    background-color: #222831;
+    display: inline-block;
+    width: 25%;
+    /* color: #fff; */
+}
+.custom {
+    padding: 10px 30px;
+    background: transparent;
+    margin: 15px 0;
+    transition: color .5s;
+    box-shadow: inset 0 0 0 5px rgb(73, 11, 11);
+    position: relative;
+}
+.custom::before,.custom::after{
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.custom::before{
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}
+.custom::after {
+    border-top-width: 5px;
+    border-right-width: 5px;
+}
+.custom:hover::before,
+.custom:hover::after {
+    border-color: #f265ff;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.custom:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.custom:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+
+/* Linear Gradiant */
+.gradiant{
+    padding: auto;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0), #00f);
+    height: 100vh;
+}
+/*Tablets [601px -> 1200px]*/
+@media only screen and (max-width: 1200px) {
+    .cardContainer {
+        display: block;
+    }
+}
+    /*Big smartphones [426px -> 600px]*/
+@media only screen and (max-width: 600px) {
+    .cardContainer {
+        display: block;
+    }
+}
+    /*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 425px) {
+    .cardContainer {
+        display: block;
+    }
+}

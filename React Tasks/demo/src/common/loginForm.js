@@ -139,11 +139,7 @@ import '../styles/login.css';
                 opacity: "1",
             },
         },
-        "@media (max-width: 767px)": {
-            paperStyle: {
-                //  backgroundColor: "#000000",
-            },
-        }
+
 })
 export default function LoginForm() {
     const classes = useStyles();
